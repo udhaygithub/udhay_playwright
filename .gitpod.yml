@@ -1,4 +1,5 @@
-image: udhaygithub/udhay_playwright
+# image: udhaygithub/udhay_playwright
+image: udhaygithub-udhay_playwright
 
 # Commands that will run on workspace start
 tasks:
