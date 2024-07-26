@@ -1,14 +1,17 @@
-# List the start up tasks. Learn more: https://www.gitpod.io/docs/configure/workspaces/tasks
+image: gitpod/udhay_playwright
+
+# Commands that will run on workspace start
 tasks:
-  - name: Script Task
-    init: echo 'init script' # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
-    command: echo 'start script'
+    - name: Setup, Install & Build
+      before: yarn global add express
+      init: yarn install
+      command: yarn build
 
-# List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
+# Ports to expose on workspace startup
 ports:
-  - name: Frontend
-    description: Port 3000 for the frontend
-    port: 24000
-    onOpen: open-preview
-
-# Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
+    - port: 3000
+      onOpen: open-preview
+      name: Website
+      description: Website Preview
+      visibility: private
+      protocol: https
