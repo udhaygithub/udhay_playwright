@@ -1,0 +1,184 @@
+{
+  "config": {
+    "configFile": "C:\\Playwright\\udhay_playwright\\playwright.config.ts",
+    "rootDir": "C:/Playwright/udhay_playwright/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Playwright/udhay_playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "Windows 10 - Chrome (latest)",
+        "name": "Windows 10 - Chrome (latest)",
+        "testDir": "C:/Playwright/udhay_playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Playwright/udhay_playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "MacOS Big Sur - Safari (latest)",
+        "name": "MacOS Big Sur - Safari (latest)",
+        "testDir": "C:/Playwright/udhay_playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.45.3",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "TestScenario1.test.ts",
+      "file": "TestScenario1.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TestScenario_1_SimpleFormDemo",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Windows 10 - Chrome (latest)",
+              "projectName": "Windows 10 - Chrome (latest)",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 952,
+                  "error": {
+                    "message": "Error: browserContext.newPage: Executable doesn't exist at C:\\Users\\ltuser\\AppData\\Local\\ms-playwright\\ffmpeg-1009\\ffmpeg-win64.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserContext.newPage: Executable doesn't exist at C:\\Users\\ltuser\\AppData\\Local\\ms-playwright\\ffmpeg-1009\\ffmpeg-win64.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserContext.newPage: Executable doesn't exist at C:\\Users\\ltuser\\AppData\\Local\\ms-playwright\\ffmpeg-1009\\ffmpeg-win64.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝"
+                    },
+                    {
+                      "message": "Error: read tcp 10.162.46.30:40196->10.100.55.165:54321: read: connection reset by peer"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-28T21:16:40.218Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Playwright\\udhay_playwright\\test-results\\TestScenario1-TestScenario-1-SimpleFormDemo-Windows-10---Chrome-latest-\\test-failed-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "7fe3fba957d3cf874543-d38f5f508222d2300caa",
+          "file": "TestScenario1.test.ts",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "title": "TestScenario_1_SimpleFormDemo",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "MacOS Big Sur - Safari (latest)",
+              "projectName": "MacOS Big Sur - Safari (latest)",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "failed",
+                  "duration": 18,
+                  "error": {
+                    "message": "Error: Unexpected browserName \"pw-webkit\", must be one of \"chromium\", \"firefox\" or \"webkit\"",
+                    "stack": "Error: Unexpected browserName \"pw-webkit\", must be one of \"chromium\", \"firefox\" or \"webkit\""
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: Unexpected browserName \"pw-webkit\", must be one of \"chromium\", \"firefox\" or \"webkit\""
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-28T21:16:40.235Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "7fe3fba957d3cf874543-ec6132e09cc01658328e",
+          "file": "TestScenario1.test.ts",
+          "line": 2,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-07-28T21:16:38.726Z",
+    "duration": 10825.347999999998,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
